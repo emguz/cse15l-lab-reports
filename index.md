@@ -2,4 +2,8 @@
 
 *This should be in Italics*  
 
-**And this should be in BOLD**
+**And this should be in BOLD**  
+* Bananas
+* Peaches 
+* Cucumber  
+A list of fruits? Are cucumbers even considered fruits???
