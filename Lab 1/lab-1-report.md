@@ -45,10 +45,14 @@ Now, hasn't it been annoying having to type your password in everytime you want 
 
 To do this, exit the terminal and type in the command ssh-keygen. This creates a pair of files called public and private keys. Keep the private key in your client then copy the public key into the server. This will make it so you don't have to type in your password everytime you want to connect. Save the key to a file like the following.  
 
-
+![](VSCode-KeyGen.png)
 
 In your client, type in ssh cs15lfa22zz@ieng6.ucsd.edu  
 Enter your password. Once you are on the server, type in mkdir .ssh then log out.  
 Once you are back on you client, type the following command:  
 
 scp *private key path* cs15lfa22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
+
+![](VSCodeSettingKey.png)  
+
+Once you do this, you can use ssh and scp commands without having to enter a password.
