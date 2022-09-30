@@ -43,7 +43,9 @@ To save time entering commands, you can seperate commands on the same line using
 
 Now, hasn't it been annoying having to type your password in everytime you want to connect or move a file? Well, you can bypass this by setting up an SSH Key.
 
-To do this, exit the terminal and type in the command ssh-keygen. This creates a pair of files called public and private keys. Keep the private key in your client then copy the public key into the server. This will make it so you don't have to type in your password everytime you want to connect.
+To do this, exit the terminal and type in the command ssh-keygen. This creates a pair of files called public and private keys. Keep the private key in your client then copy the public key into the server. This will make it so you don't have to type in your password everytime you want to connect. Save the key to a file like the following.  
+
+
 
 In your client, type in ssh cs15lfa22zz@ieng6.ucsd.edu  
 Enter your password. Once you are on the server, type in mkdir .ssh then log out.  
