@@ -16,10 +16,9 @@ In the terminal where zz is your account name. Once you enter, you will be asked
 
 Now, exit the server and you can try some commands out. Here is a list of commands that you can try out.  
 
-- cd ~
-- cd
-- ls -lat
-- ls -a
+- cd ~  (Changes directory to the home directory)
+- cd    (Changes directory to whichever path you choose)
+- ls    (Lists the files in the specific folder you are currently in)
 
 The following screenshot will give an example of a command I used:  
 
@@ -47,12 +46,20 @@ To do this, exit the terminal and type in the command ssh-keygen. This creates a
 
 ![](VSCode-KeyGen.png)
 
-In your client, type in ssh cs15lfa22zz@ieng6.ucsd.edu  
+This created two files, the public key and the private key. (NOT FINISHED FINISH THIS SOON)In your client, type in ssh cs15lfa22zz@ieng6.ucsd.edu  
 Enter your password. Once you are on the server, type in mkdir .ssh then log out.  
-Once you are back on you client, type the following command:  
+Once you are back on your client, type the following command:  
 
 scp *private key path* cs15lfa22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
 
 ![](VSCodeSettingKey.png)  
 
 Once you do this, you can use ssh and scp commands without having to enter a password.
+
+Now, lets get down to business. Having to type and enter multiple commands takes a lot of time. To save time on this, we can optimize remote running by using the same command on different files at the same time.  
+
+A great example is running whichever files you would like in your computer. To do this, we can use the semicolon (;) to differentiate between commands such as javac (compiling) and java (running).  
+
+![](VScode1.8.png)
+
+The example above shows how I put two commands in the same line, and both those commands worked. You can get much more creative with it, I just wanted to keep it simple for everyone to understand.
