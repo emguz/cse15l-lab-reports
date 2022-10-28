@@ -14,6 +14,7 @@ Now, to search for a string, we want to search for a substring and have a list o
 I have added a few additional strings and those that have the substring “ban” in them get returned for the user to see. The same handleRequest method gets called, however this argument is now “localhost:42069/search?s=” instead of “localhost42069/add?s=”. This runs through a different if statement, in which the program will do the same process as above. It gets the path, seeing that it contains search instead of add. Then, if gets the query and splits the string into a list of two elements, separated by the =. The second element is the substring we are looking for. Now, we have an array list of strings that contains all of our words. This part of the method runs through the array list and checks if each string in it contains the substring “ban” in our case. It will then add the strings that match to a string that we will return. This ends up returning the words displayed above.
 
 What happens if we don't search or add in the path? Well there is a third scenario.
+
 ![](Lab-Report-2-1.NOTFOUND.png)
 
 In the case, I typed in localhost:42069/sbjbsdjkbvk, basically I indiscriminately spammed my keyboard. The argument going through the function handleRequest would be localhost:42069/sbjbsdjkbvk. The function looks at the path and since the path is not /, /search, or /add, it returns an error message “404 Not Found!”
