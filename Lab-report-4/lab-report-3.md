@@ -43,4 +43,6 @@ If you look at the screenshot above, you'll see that the print statment is now a
 I just took a screenshot of the bottom of the page because that's the only thing that really changes when we press the keys above. After pressing \<enter>, we save the changes and all is good with the world.
 
 **Part 2**
+The first method, where I changed the file locally, scp it to the remote server, then running the bash script, it took me about 2 minutes and 40 seconds. By already being logged into the ssh server, going into vim to make the edits, then running the bash script, it took me about 1 minute and 10 seconds. A considerably faster time. 
 
+I would much rather prefer working on vim than doing the changes locally and having to scp it every time I made changes. I think a big part of the reason why vim was so much faster is that scping an entire directory takes a long time. I also know that as I use vim more often, I will get better at it and my time to make edits will be even shorter. I know that in this case, having to write down my whole process in part one basically branded it in my brain, so I immediately knew the steps to take. If I continue working in vim, then my editing process will be much faster.
