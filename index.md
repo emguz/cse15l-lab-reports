@@ -14,3 +14,4 @@ A list of fruits? Are cucumbers even considered fruits???
 
 [Lab Report 3](lab-report-3/lab-report-3.html)
 
+[Lab Report 4](Lab-report-4/lab-report-4.md)
